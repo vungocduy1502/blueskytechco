@@ -146,6 +146,7 @@ select, button {
 }
 .product--center{
   .card{
+    border: 2px solid $r000;
     .card__title{
       text-transform: uppercase;
     }

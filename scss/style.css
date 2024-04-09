@@ -503,6 +503,7 @@ select, button {
 }
 
 .product--center .card {
+  border: 2px solid #DC323C;
   padding: 35px 40px 40px;
 }
 .product--center .card .card__title {
