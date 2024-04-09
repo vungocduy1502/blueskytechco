@@ -1,79 +1,91 @@
 // footer
-footer{
+footer {
   border-top: 1px solid #E5E8EC;
   font-size: 14px;
   line-height: 25px;
   color: $gr002;
   font-weight: 500;
   padding: 48px 0 0;
-  li{
+
+  li {
     list-style-type: none;
     max-width: 451px;
   }
-  .footer__title{
+
+  .footer__title {
     color: $b000;
     margin-bottom: 15px;
     font-weight: 700;
     text-transform: uppercase;
   }
-  .footer__number{
+
+  .footer__number {
     font-weight: 500;
     font-size: 30px;
     line-height: 38px;
     color: $blue000;
     margin: 7px 0 15px;
   }
-  a{
+
+  a {
     text-decoration: none;
     color: $gr002;
-    &:hover{
+
+    &:hover {
       color: $b000;
       text-decoration: underline;
     }
   }
-.footer__search{
-  margin: 20px 0 16px;
-  input{
-    border: 1px solid $gr001;
-    border-radius: 50px;
-    height: 50px;
-    width: 300px;
-    padding: 0 20px;
+
+  .footer__search {
+    margin: 20px 0 16px;
+
+    input {
+      border: 1px solid $gr001;
+      border-radius: 50px;
+      height: 50px;
+      width: 300px;
+      padding: 0 20px;
+    }
+
+    button {
+      width: 140px;
+      height: 50px;
+      background-color: $blue000;
+      border-radius: 50px;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      text-align: center;
+      border: none;
+    }
   }
-  button{
-    width: 140px;
-    height: 50px;
-    background-color: $blue000;
-    border-radius: 50px;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 700;
-    text-align: center;
-    border: none;
-  }
-}
-.footer_info {
-  border-top: 1px solid #E5E8EC;
-  margin-top: 60px;
-  padding: 35px 0;
-  .image{
-    height: 30px;
-    width: 51px;
-    border: 1px solid $gr001;
-    border-radius: 3px;
-    img{
-      width: 43px;
-      height: 22px;
+
+  .footer_info {
+    border-top: 1px solid #E5E8EC;
+    margin-top: 60px;
+    padding: 35px 0;
+
+    .image {
+      height: 30px;
+      width: 51px;
+      border: 1px solid $gr001;
       border-radius: 3px;
-      margin: 4px;
+
+      img {
+        width: 43px;
+        height: 22px;
+        border-radius: 3px;
+        margin: 4px;
+      }
     }
   }
 }
-}
+
 @media screen and (max-width: 768px) {
   .footer__search {
-    input{
-      width:auto !important;
+    input {
+      width: auto !important;
     }
   }
 }
