@@ -2,11 +2,6 @@
   padding: 0;
   margin: 0;
 }
-// img {
-//   width: 100%;
-//   height: 100%;
-//   object-fit: cover;
-// }
 html,
 body {
   font-family: "Bai Jamjuree", sans-serif;
@@ -28,6 +23,9 @@ select, button {
 .main__content {
   background-color: #F1F5F6;
   padding: 26px 0 60px;
+  .main__content__dropdown--table{
+    display: none;
+  }
   
 }
 .main__content--list{
@@ -117,6 +115,7 @@ select, button {
       img{
         width: 100%;
         height: 100%;
+        object-fit: cover;
       }
       .text{
         position: absolute;
@@ -141,10 +140,11 @@ select, button {
   margin-top: 60px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 5px;
   width: calc(100%/3);
 }
-.product--centenr{
+.product--center{
   .card{
     .card__title{
       text-transform: uppercase;
@@ -321,57 +321,62 @@ select, button {
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 1410px) {
+@media screen and (max-width: 1410px) {
   .wrap{
    width: auto;
+   margin: 20px;
   }
-  .header__description--search {
-    .header__search {
-      width: 300px;
-    }
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 768px) {
-  .product_items {
-    h6 {
-      margin-bottom: 20px;
-    }
-  }
-  .product {
-    padding: 54px 18px;
-  }
-  .banner_image_header {
-    height: 1024px;
-  }
-  .banner_content {
-    h4 {
-      font-size: 19px;
-      margin-bottom: 18px;
-    }
-  }
-  .product_more {
-    .wrapper {
-      margin: 0 9px 9px 0;
+  .product{
+    .card{
+      padding: 10px;
     }
   }
 }
-@media only screen and (max-width: 480px) {
-  .banner_image_header {
-    height: 667px;
+@media screen and (max-width: 1380px) {
+  .main__content--product{
+    flex-wrap: wrap;
+    .product{
+      width:100%;
+      justify-content: center;
+    }
+    .product--center {
+      .card{
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .main__content--introduct{
+    display: block;
+    .main__content--list{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom:20px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .main__content--product {
+    .product--center .card {
+      display: block;
+  }
+  }
+  .main__content--topProduct{
+    .slider{
+      width: auto;
+      height:auto;
+      gap:10px;
+      padding: 15px;
+    }
+    .top-product{
+      flex-wrap: wrap;
+      .image{
+        width: 100%;
+      }
+    }
   }
 }

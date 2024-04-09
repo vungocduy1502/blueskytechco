@@ -70,3 +70,10 @@ footer{
   }
 }
 }
+@media screen and (max-width: 768px) {
+  .footer__search {
+    input{
+      width:auto !important;
+    }
+  }
+}

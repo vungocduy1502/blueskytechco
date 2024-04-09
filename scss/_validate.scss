@@ -24,12 +24,17 @@ $gr002:#515D66;
 .justify-content-end{
   justify-content: end;
 }
+.justify-content-md-end{
+  @media screen and (min-width: 1024px){
+    justify-content: end;
+  }
+  
+}
 .align-center{
   align-items: center;
 }
-.flew-wrap {
+.flex-wrap {
   flex-wrap: wrap;
-  gap: 10px;
 }
 .gap-5{
   gap: 5px;
@@ -66,7 +71,7 @@ $gr002:#515D66;
   .col-lg-12 {
     width: 100%;
   }
-  @media screen and (min-width: 481px) and (max-width: 768px) {
+  @media screen and (min-width: 1024px) and (max-width: 1440px) {
     .col-md-4 {
       width: 32.333%;
     }
