@@ -58,7 +58,11 @@
 }
 
 .color-red {
-  color: #DC323C;
+  color: #DC323C !important;
+}
+
+.color-blue {
+  color: #2B38D1 !important;
 }
 
 .row {
@@ -598,7 +602,6 @@ select, button {
   font-size: 18px;
   line-height: 22px;
   font-weight: 600;
-  color: #DC323C;
   margin-bottom: 10px;
 }
 .card .price span {
@@ -606,6 +609,12 @@ select, button {
   margin-left: 5px;
   font-size: 11px;
   font-weight: 400;
+}
+.card .price.color-red {
+  color: #DC323C;
+}
+.card .price.color-blue {
+  color: #2B38D1;
 }
 .card .detail {
   color: #008A00;

@@ -55,7 +55,10 @@ $gr002:#515D66;
   gap: 35px;
 }
 .color-red{
-  color: $r000;
+  color: $r000 !important;
+}
+.color-blue{
+  color: $blue000 !important;
 }
 .row {
     display: flex;
